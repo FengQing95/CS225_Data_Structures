@@ -19,7 +19,7 @@ int findCircleNum(std::vector<std::vector<int>>& M) {
                 int parent_i = find(i, parents);
                 int parent_j = find(j, parents);
                 if (parent_i != parent_j) {
-                    parents[i] = parent_j;
+                    parents[parent_i] = parent_j;
                     res--;
                 }
             }
